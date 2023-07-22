@@ -40,6 +40,107 @@
     <link rel="icon" href="favicons/favicon.ico" />
     <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin />
     <link
+    rel="preload"
+    href="/new.css"
+    as="style"
+  />
+  <style>
+    * { 
+    box-sizing: border-box;
+} 
+
+body { 
+    margin:  0; 
+    min-height: 100%; 
+    color: #333; 
+    background-color: #fff; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    line-height: 20px;
+} 
+
+.body { 
+    object-fit: fill; 
+    background-color: #000; 
+    padding-left: 0;
+} 
+
+html { 
+    -ms-text-size-adjust:  100%; 
+    -webkit-text-size-adjust:  100%; 
+    font-family:  sans-serif;
+    height: 100%;
+} 
+
+.clients-section-2 { 
+    padding-top: 0; 
+    padding-bottom: 0; 
+    overflow: hidden;
+} 
+
+.clients-container { 
+    height: 200px; 
+    align-items: center; 
+    display: flex;
+} 
+
+.integration-block-2 { 
+    width: 100%; 
+    height: 100%; 
+    flex: 1; 
+    align-items: center; 
+    display: flex; 
+    position: relative; 
+    overflow: hidden;
+} 
+
+.integratinon-card-line { 
+    z-index: -1; 
+    display: flex;
+} 
+
+.integration-inside-line { 
+    align-items: center; 
+    display: flex;
+} 
+
+.integration-item-4 { 
+    width: 200px; 
+    height: 72px; 
+    margin-right: 30px;
+} 
+
+img { 
+    display: inline-block;
+    border:  0;
+    max-width: 100%; 
+    vertical-align: middle; 
+} 
+
+.image-17 { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+} 
+
+
+/* These were inline style tags. Uses id+class to override almost everything */
+#style-yHWDQ.style-yHWDQ {  
+   opacity: 1;  
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  
+    transform-style: preserve-3d;  
+}  
+#style-qE8oH.style-qE8oH {  
+   transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  
+    transform-style: preserve-3d;  
+}  
+#style-PeVRh.style-PeVRh {  
+   transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  
+    transform-style: preserve-3d;  
+}  
+
+  </style>
+    <link
       rel="preload"
       href="_next/static/css/f3c5ce9f320851b7.css"
       as="style"
@@ -105,11 +206,6 @@
       src="_next/static/QSp8PvzX3CD2dA_NPW5PK/_ssgManifest.js"
       defer=""
     ></script>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=647059f1819543360190fdcf" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script
-    src="_next/static/chunks/webflow.js"
-    defer=""
-  ></script>
     <style
       data-href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     >
@@ -964,8 +1060,12 @@
             </div>
             <div class="w-full lg:flex hidden">
               <div
-                class="h-[500px] w-[100%] rounded-md border-game-gray-dark border-8" style="background-image: url(/images/twitch.png); background-size: cover; background-position: center"
+                class="h-[500px] w-[100%] rounded-md border-game-gray-dark border-8"
               >
+                <img
+            src="images/twitch.png"
+            class="cursor-pointer" style="width: 100%; height: 100%;"
+          />
               </div>
             </div>
           </div>
@@ -973,162 +1073,154 @@
             class="flex absolute flex-col items-center justify-center w-full mt-2 lg:mt-10 px-4"
           ></div>
         </div>
-      </main>
-      <div>
-        <style>
-          * { 
-  box-sizing: border-box;
-} 
-
-body { 
-  margin:  0; 
-  min-height: 100%; 
-  font-family: Arial, sans-serif; 
-  font-size: 14px; 
-  line-height: 20px;
-} 
-
-.body { 
-  object-fit: fill; 
-  background-color: #000; 
-  padding-left: 0;
-} 
-
-html { 
-  -ms-text-size-adjust:  100%; 
-  -webkit-text-size-adjust:  100%; 
-  font-family:  sans-serif;
-  height: 100%;
-} 
-
-.clients-section-2 { 
-  padding-top: 0; 
-  padding-bottom: 0; 
-  overflow: hidden;
-} 
-
-.clients-container { 
-  height: 200px; 
-  align-items: center; 
-  display: flex;
-} 
-
-.integration-block-2 { 
-  width: 100%; 
-  height: 100%; 
-  flex: 1; 
-  align-items: center; 
-  display: flex; 
-  position: relative; 
-  overflow: hidden;
-} 
-
-.integratinon-card-line { 
-  z-index: -1; 
-  display: flex;
-} 
-
-.integration-inside-line { 
-  align-items: center; 
-  display: flex;
-} 
-
-.integration-item-4 { 
-  width: 200px; 
-  height: 72px; 
-  margin-right: 30px;
-} 
-
-img { 
-  display: inline-block;
-  border:  0;
-  max-width: 100%; 
-  vertical-align: middle; 
-} 
-
-.image-17 { 
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover;
-} 
-
-
-/* These were inline style tags. Uses id+class to override almost everything */
-#style-yHWDQ.style-yHWDQ {  
- opacity: 1;  
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  
-  transform-style: preserve-3d;  
-}  
-#style-qE8oH.style-qE8oH {  
- transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  
-  transform-style: preserve-3d;  
-}  
-#style-PeVRh.style-PeVRh {  
- transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);  
-  transform-style: preserve-3d;  
-}  
-        </style>
-        <div class="clients-section-2 wf-section snipcss-oDEhC">
-          <div class="clients-container">
-            <div data-w-id="50e52092-d1e0-4c2d-f95f-b6d24320a308" class="integration-block-2 style-yHWDQ" id="style-yHWDQ">
-              <div class="integratinon-card-line">
-                <div class="integration-inside-line style-qE8oH" id="style-qE8oH">
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d97_1133.png" loading="lazy" alt="" class="image-17">
+          <div class="clients-section-2 wf-section">
+            <div class="clients-container">
+              <div
+                data-w-id="50e52092-d1e0-4c2d-f95f-b6d24320a308"
+                style="
+                  opacity: 1;
+                  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                  transform-style: preserve-3d;
+                "
+                class="integration-block-2"
+              >
+                <div class="integratinon-card-line">
+                  <div
+                    class="integration-inside-line"
+                    style="
+                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d97_1133.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8b_1122.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8d_1144.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8f_1155.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d93_1188.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d95_1199.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d91_1166.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
                   </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8b_1122.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8d_1144.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8f_1155.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d93_1188.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d95_1199.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d91_1166.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                </div>
-                <div class="integration-inside-line style-PeVRh" id="style-PeVRh">
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d97_1133.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8b_1122.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8d_1144.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8f_1155.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d93_1188.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d95_1199.png" loading="lazy" alt="" class="image-17">
-                  </div>
-                  <div class="integration-item-4">
-                    <img src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d91_1166.png" loading="lazy" alt="" class="image-17">
+                  <div
+                    class="integration-inside-line"
+                    style="
+                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+                        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                  >
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d97_1133.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8b_1122.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8d_1144.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d8f_1155.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d93_1188.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d95_1199.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
+                    <div class="integration-item-4">
+                      <img
+                        src="https://uploads-ssl.webflow.com/647059f1819543360190fdcf/6495d7eebe8d0755cf2b3d91_1166.png"
+                        loading="lazy"
+                        alt=""
+                        class="image-17"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        
-      </div>
-        <img
-            src="images/footer.png"
-            class="cursor-pointer"
-            style="width: 100%;"
-          />
+      </main>
       <w3m-modal></w3m-modal>
     </div>
     <script id="__NEXT_DATA__" type="application/json">
